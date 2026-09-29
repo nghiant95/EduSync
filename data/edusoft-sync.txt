@@ -1,0 +1,22 @@
+===== Edusoft Sync ======
+
+CREATE TABLE SyncHashes
+(
+    TableName NVARCHAR(100),
+    SourceKey NVARCHAR(200),
+    DataHash CHAR(64),
+    LastSyncTime DATETIME2,
+
+    PRIMARY KEY(TableName, SourceKey)
+)
+
+CREATE TABLE SyncMappings
+(
+    TableName NVARCHAR(100) NOT NULL,
+    SourceId INT NOT NULL,
+    TargetId UNIQUEIDENTIFIER NOT NULL,
+
+    CONSTRAINT PK_SyncMappings
+        PRIMARY KEY(TableName, SourceId)
+);
+
