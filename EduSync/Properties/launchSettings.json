@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "EduSync": {
+      "commandName": "Project",
+      "commandLineArgs": "all"
+    }
+  }
+}
