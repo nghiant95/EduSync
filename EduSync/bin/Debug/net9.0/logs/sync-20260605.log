@@ -1,0 +1,73 @@
+[2026-06-05 14:32:06] [INF] EduSync Started
+[2026-06-05 14:32:09] [INF] ========== START SYNC Departments ==========
+[2026-06-05 14:32:11] [INF] Departments Sync Finished. Inserted=0, Updated=0, Skipped=17
+[2026-06-05 14:32:11] [INF] ========== START SYNC [Departments.Subs] ==========
+[2026-06-05 14:32:11] [INF] [Departments.Subs] Sync Finished. Inserted=0, Updated=0, Skipped=18, Errors=0
+[2026-06-05 14:32:11] [INF] ========== START SYNC Campuses ==========
+[2026-06-05 14:32:11] [INF] [HASH CREATED] Campuses L
+[2026-06-05 14:32:11] [INF] [HASH CREATED] Campuses IU
+[2026-06-05 14:32:11] [INF] [HASH CREATED] Campuses C2
+[2026-06-05 14:32:12] [INF] [INSERT] Campuses PT
+[2026-06-05 14:32:12] [INF] Campuses Sync Finished. Inserted=1, Updated=0, Skipped=3, Errors=0
+[2026-06-05 14:47:59] [INF] EduSync Started
+[2026-06-05 14:48:02] [INF] ========== START SYNC Departments ==========
+[2026-06-05 14:48:04] [INF] Departments Sync Finished. Inserted=0, Updated=0, Skipped=17
+[2026-06-05 14:48:04] [INF] ========== START SYNC [Departments.Subs] ==========
+[2026-06-05 14:48:04] [INF] [Departments.Subs] Sync Finished. Inserted=0, Updated=0, Skipped=18, Errors=0
+[2026-06-05 14:48:04] [INF] ========== START SYNC Campuses ==========
+[2026-06-05 14:48:04] [FTL] Application crashed
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'CoSo'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__270_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryAsync[T](IDbConnection cnn, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 434
+   at EduSync.Services.CampusSyncService.SyncAsync() in D:\Source\other\EduSync\EduSync\Services\CampusSyncService.cs:line 41
+   at Program.<Main>$(String[] args) in D:\Source\other\EduSync\EduSync\Program.cs:line 62
+ClientConnectionId:e12f6dc2-b121-463a-b2e3-6d53bd118b4e
+Error Number:208,State:1,Class:16
+[2026-06-05 15:03:24] [INF] EduSync Started
+[2026-06-05 15:03:25] [INF] ========== START SYNC Departments ==========
+[2026-06-05 15:03:25] [INF] Departments Sync Finished. Inserted=0, Updated=0, Skipped=17
+[2026-06-05 15:03:25] [INF] ========== START SYNC [Departments.Subs] ==========
+[2026-06-05 15:03:25] [INF] [Departments.Subs] Sync Finished. Inserted=0, Updated=0, Skipped=18, Errors=0
+[2026-06-05 15:03:25] [INF] ========== START SYNC Campuses ==========
+[2026-06-05 15:03:25] [INF] Campuses Sync Finished. Inserted=0, Updated=0, Skipped=4, Errors=0
+[2026-06-05 15:03:25] [INF] ========== START SYNC Semesters ==========
+[2026-06-05 15:03:27] [INF] Semesters Sync Finished. Inserted=54, Updated=0, Skipped=11, Errors=0
+[2026-06-05 15:24:52] [INF] EduSync Started
+[2026-06-05 15:24:55] [INF] ========== START SYNC Departments ==========
+[2026-06-05 15:24:56] [INF] Departments Sync Finished. Inserted=0, Updated=0, Skipped=17
+[2026-06-05 15:24:56] [INF] ========== START SYNC [Departments.Subs] ==========
+[2026-06-05 15:24:56] [INF] [Departments.Subs] Sync Finished. Inserted=0, Updated=0, Skipped=18, Errors=0
+[2026-06-05 15:24:56] [INF] ========== START SYNC Campuses ==========
+[2026-06-05 15:24:56] [INF] Campuses Sync Finished. Inserted=0, Updated=0, Skipped=4, Errors=0
+[2026-06-05 15:24:56] [INF] ========== START SYNC AcademicYears ==========
+[2026-06-05 15:24:57] [INF] [INSERT] AcademicYears 2004-2005
+[2026-06-05 15:24:57] [INF] [INSERT] AcademicYears 2005-2006
+[2026-06-05 15:24:57] [INF] [INSERT] AcademicYears 2006-2007
+[2026-06-05 15:24:57] [INF] [INSERT] AcademicYears 2007-2008
+[2026-06-05 15:24:57] [INF] [INSERT] AcademicYears 2008-2009
+[2026-06-05 15:24:57] [INF] [INSERT] AcademicYears 2009-2010
+[2026-06-05 15:24:57] [INF] [INSERT] AcademicYears 2010-2011
+[2026-06-05 15:24:57] [INF] [INSERT] AcademicYears 2011-2012
+[2026-06-05 15:24:57] [INF] [INSERT] AcademicYears 2012-2013
+[2026-06-05 15:24:57] [INF] [INSERT] AcademicYears 2013-2014
+[2026-06-05 15:24:57] [INF] [INSERT] AcademicYears 2014-2015
+[2026-06-05 15:24:57] [INF] [INSERT] AcademicYears 2015-2016
+[2026-06-05 15:24:57] [INF] [INSERT] AcademicYears 2016-2017
+[2026-06-05 15:24:57] [INF] [INSERT] AcademicYears 2017-2018
+[2026-06-05 15:24:57] [INF] [INSERT] AcademicYears 2018-2019
+[2026-06-05 15:24:57] [INF] [INSERT] AcademicYears 2019-2020
+[2026-06-05 15:24:57] [INF] [INSERT] AcademicYears 2020-2021
+[2026-06-05 15:24:57] [INF] [INSERT] AcademicYears 2021-2022
+[2026-06-05 15:24:57] [INF] [HASH CREATED] AcademicYears 2022-2023
+[2026-06-05 15:24:57] [INF] [HASH CREATED] AcademicYears 2023-2024
+[2026-06-05 15:24:57] [INF] [HASH CREATED] AcademicYears 2024-2025
+[2026-06-05 15:24:57] [INF] [HASH CREATED] AcademicYears 2025-2026
+[2026-06-05 15:24:57] [INF] AcademicYears Sync Finished. Inserted=18, Updated=0, Skipped=4, Errors=0
+[2026-06-05 15:24:57] [INF] ========== START SYNC Semesters ==========
+[2026-06-05 15:24:59] [INF] Semesters Sync Finished. Inserted=0, Updated=65, Skipped=0, Errors=0

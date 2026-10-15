@@ -34,6 +34,8 @@ try
             services.AddTransient<CampusSyncService>();
             services.AddTransient<AcademicYearSyncService>();
             services.AddTransient<SemesterSyncService>();
+            services.AddTransient<InstructorSyncService>();
+            services.AddTransient<StudentSyncService>();
         });
 
     using var host = builder.Build();
@@ -53,10 +55,22 @@ try
             .SyncAsync();
             break;
 
+        case "instructors":
+            await scope.ServiceProvider
+                .GetRequiredService<InstructorSyncService>()
+                .SyncAsync();
+            break;
+        
+        case "students":
+            await scope.ServiceProvider
+                .GetRequiredService<InstructorSyncService>()
+                .SyncAsync();
+            break;
+
         case "all":
             await scope.ServiceProvider
-        .GetRequiredService<DepartmentSyncService>()
-        .SyncAsync();
+                .GetRequiredService<DepartmentSyncService>()
+                .SyncAsync();
 
             await scope.ServiceProvider
                 .GetRequiredService<SubDepartmentSyncService>()
@@ -72,6 +86,14 @@ try
 
             await scope.ServiceProvider
                 .GetRequiredService<SemesterSyncService>()
+                .SyncAsync();
+
+            await scope.ServiceProvider
+                .GetRequiredService<InstructorSyncService>()
+                .SyncAsync();
+           
+            await scope.ServiceProvider
+                .GetRequiredService<StudentSyncService>()
                 .SyncAsync();
             break;
     }
